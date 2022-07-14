@@ -165,16 +165,6 @@ margin: top 0px;;
     }
   
 
-.button-list-all:hover,
-.button-list-all:focus,
-.button-list-design:hover,
-.button-list-design:focus,
-.button-list-mark:hover,
-.button-list-mark:focus,
-.button-list-web:hover,
-.button-list-web:focus
-{
-    color:yellow
 }
 .button-list-all,
 .button-list-web,
