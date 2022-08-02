@@ -163,7 +163,6 @@ font-style: normal;
             display: flex;
         }
         /*hover for link*/
-        .navemail::before:hover,
         .navstudio:hover,
         .navstudio:focus,
         .navemail:hover,
