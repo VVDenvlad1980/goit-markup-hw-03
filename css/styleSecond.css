@@ -1,7 +1,7 @@
 body {
    
     font-family: 'Roboto', 'Raleway' , 'Oleo Script' ;
-    font-weight 400px;
+    font-weight: 400px;
     background-color: var(--mainwhite);
     text-decoration: none;
     font-style: normal;
@@ -99,6 +99,7 @@ margin-right: 50px;
 }
 .navlist-second{
     margin-left: auto;
+    align-items: baseline;
 }
 li>.navstudio,
 li>.navportfolio,
@@ -137,7 +138,32 @@ text-decoration: none;
 font-style: normal;
         color: var(--maingrate);
     }
+    .navemail::before{
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 12px;
+        margin-right: 10px;
+        background-image: url(../images/envelope\ \(1\).svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        }
+        .navfhone-header::before{
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 12px;
+            margin-right: 10px;
+            background-image: url(../images/smartphone\ \(1\).svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+
+        }
+        .item.mail{
+            display: flex;
+        }
         /*hover for link*/
+        .navemail::before:hover,
         .navstudio:hover,
         .navstudio:focus,
         .navemail:hover,
@@ -151,14 +177,30 @@ font-style: normal;
         }
         /*hero*/
         /*hero-title*/
+     
+    
         .hero{
+            max-width: 1600px;
+            max-height: 600px;
+            margin-left: auto;
+            margin-right: auto;
             background-color: var(--2black);
-            text-align: center;
+        text-align: center;
             padding-top: 200px;
             padding-bottom: 200px;
+            background-image:
+        linear-gradient(to right,
+                rgba(0, 0, 0, 0.4),
+                rgba(47, 48, 58, 0.4)),
+
+                    url(../images/1Hero_Img.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
             }
         
          .hero-title{
+             text-align: center;
          margin-top: 0px;
          margin-bottom: 30px;
              font-size: 44px;
@@ -170,7 +212,7 @@ font-style: normal;
 /*button for hero*/
 
 .button-hero{ 
-    display: inline-block;
+     display: inline-block;
     border-radius: 4px;
     padding: 10px 32px;
     min-width: 130px;
@@ -181,10 +223,14 @@ font-style: normal;
      line-height: 1.38;
      letter-spacing: 0.06em;
      text-decoration: none;
-     text-align: center;
+     
      
 
 }
+.hero.conteiner-hero {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4)),
+            url(../images/1Hero_Img.jpg);
+              }
 
 
 /*advantages*/
@@ -224,6 +270,30 @@ margin-left: 30px;
 .activity{
 padding-top: 94px;
 
+}
+.adv-item::before{
+    content: "";
+    border-radius: 4px;
+    display: block;
+    background-color: var(--2gray);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 120px;
+    margin-bottom: 30px;
+      
+}
+.icon-antena::before{
+background-image: url(../images/antenna\ 1.svg);
+}
+.icon-clock::before{
+    background-image: url(../images/clock\ 1.svg);
+}
+.icon-comp::before {
+    background-image: url(../images/diagram\ 1.svg);
+}
+.icon-astro::before {
+    background-image: url(../images/astronaut\ 1.svg);
 }
 /*our team*/
 
@@ -285,7 +355,101 @@ background-color: var(--2gray);
 .item:not(:last-child) {
     margin-right: 10px;
 }
+.link-social::before{
+    content: "";
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    }
+.link-social::before:not(:last-child){
+    margin-right: 10px;
+}
+.icon-twit::before{
+background-image: url(../images/Twit.svg);
+}
+.icon-insta::before {
+    background-image: url(../images/insta.svg);
+}
+.icon-fase::before {
+    background-image: url(../images/fase.svg);
+}
+.icon-inlink::before {
+    background-image: url(../images/indin.svg);
+}
+/*section const-clients*/
+.client-const{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.title-clients{
+ font-family: Roboto;
+font-size: 36px;
+font-weight: 700;
+line-height: 1.667;
+letter-spacing: 0.03em;
+text-align: center;
+margin-bottom: 50px;
+}
+.list-const-client{
+    display: flex;
+}
+.list-client{
+margin-right: 30px;
+}
+.list-client.last{
+margin-right: 0px;
+}
+.list-client{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
 
+.link-social-clients::before{
+    content: "";
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.icon-logofirst::before{
+    width: 44px;
+    height: 49px;
+    background-image:url(../images/logo\ 1.svg);
+}
+.icon-second::before {
+    width: 40px;
+    height: 52px;
+    background-image: url(../images/logo\ 2.svg);
+}
+.icon-thired::before {
+    width: 41px;
+    height: 43px;
+    background-image: url(../images/logo\ 3.svg);
+}
+.icon-four::before {
+    width: 80px;
+    height: 42px;
+    background-image: url(../images/logo\ 4.svg);
+}
+.icon-five::before {
+    width: 59px;
+    height: 47px;
+    background-image: url(../images/logo\ 5.svg);
+}
+.icon-six::before {
+    width: 89px;
+    height: 45px;
+    background-image: url(../images/logo\ 6.svg);
+}
     /*Footer*/
    
        
@@ -369,7 +533,33 @@ color: var(--maingrate);
     line-height:1.714;
     letter-spacing: 0.03em;
                        }
-   
+.link-social-foot::before{
+    content: "";
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    opacity: 0.2;
+
+}
+.down-inst::before{
+     background-image: url(../images/insta.svg);
+    
+}
+.down-twit::before {
+    background-image: url(../images/Twit.svg);
+}
+.down-fase::before {
+    background-image: url(../images/fase.svg);
+}
+
+.down-indin::before {
+    background-image: url(../images/indin.svg);
+
+} 
 /*PORTFOLIO*/
 
 .button-list-all,
